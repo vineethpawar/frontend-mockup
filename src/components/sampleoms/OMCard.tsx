@@ -21,9 +21,9 @@ const OMCard: React.FC<IOMCard> = ({
 }) => {
   const CTA = () =>
     ctaType === "outline" ? (
-      <OutlineBtn children="View Sample Template" />
+      <OutlineBtn>View Sample Template</OutlineBtn>
     ) : (
-      <PrimaryBtn children="View Sample Template" />
+      <PrimaryBtn>View Sample Template</PrimaryBtn>
     );
   return (
     <div className="om__card">
