@@ -4,7 +4,7 @@ import bg from "../../assets/bg.png";
 import play from "../../assets/icons/play.svg";
 import arrowRight from "../../assets/icons/arrowright.svg";
 import heroImg from "../../assets/heroimage.png";
-import PrimaryBtn from "../button/primary";
+import PrimaryBtn from "../button/Primary";
 import Link from "next/link";
 
 const Hero: React.FC = () => {

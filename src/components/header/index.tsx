@@ -3,7 +3,7 @@ import Image from "next/image";
 import logo from "../../assets/logo.svg";
 import lock from "../../assets/icons/lock.svg";
 import hamburgermenu from "../../assets/icons/hamburgermenu.svg";
-import PrimaryBtn from "../button/primary";
+import PrimaryBtn from "../button/Primary";
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);

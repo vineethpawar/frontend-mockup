@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import React, { ReactNode } from "react";
 import OutlineBtn from "../button/Outline";
-import PrimaryBtn from "../button/primary";
+import PrimaryBtn from "../button/Primary";
 import Link from "next/link";
 
 interface IOMCard {
