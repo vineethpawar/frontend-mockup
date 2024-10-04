@@ -2,13 +2,13 @@
 import { useState, useEffect } from 'react';
 
 const useIsMobileView = (breakpoint = 650) => {
-  const [isMobileView, setIsMobileView] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(true);
 
   useEffect(() => {
     // Check if the window object is defined (to prevent errors during SSR)
     if (typeof window !== 'undefined') {
       const handleResize = () => {
-        setIsMobileView(window.innerWidth < breakpoint);
+        setIsMobileView(window?.innerWidth < breakpoint);
       };
 
       handleResize();
