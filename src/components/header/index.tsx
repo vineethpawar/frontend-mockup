@@ -4,20 +4,14 @@ import logo from "../../assets/logo.svg";
 import lock from "../../assets/icons/lock.svg";
 import hamburgermenu from "../../assets/icons/hamburgermenu.svg";
 import PrimaryBtn from "../button/Primary";
+import useIsMobileView from './../../hooks/useIsMobileView';
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(false);
-
+  const isMobileView = useIsMobileView()
   const Divider = () => (
     <div style={{ height: "1px", width: "100%", background: "lightgray" }} />
   );
-
-  useEffect(() => {
-    if (window) {
-      if (window?.innerWidth < 650) setIsMobileView(true);
-    }
-  }, []);
 
   if (menuOpen) {
     return (
